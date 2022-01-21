@@ -1,0 +1,32 @@
+<style>
+/*
+     SEARCH CONTAINER
+*/
+
+body {
+    position: relative;
+}
+
+.search-container {
+    padding-bottom: 2px;
+    position: relative;
+    width: 75%;
+    float: left;
+    top: 2px;
+}
+
+.search-box {
+    display: inline;
+    left: 10px;
+}
+
+.search-button {
+    display: inline-block;
+    left: 0;
+}
+
+.search-in {
+    display: inline;
+}
+
+</style>

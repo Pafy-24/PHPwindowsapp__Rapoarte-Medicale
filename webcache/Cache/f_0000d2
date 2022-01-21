@@ -1,0 +1,339 @@
+﻿                             
+            <html>
+
+                <head>
+                
+                    <title>Raport medical</title>
+                    <script src="/js/w3icons.js"></script>
+                    <link rel="stylesheet" type="text/css" href="/css/table.css" />
+                    <link rel="stylesheet" type="text/css" href="/css/search.css" />
+                    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+                    <script src="/js/jquery.min.js"></script>
+                    <script src="/js/autosize-pak.js"></script>
+                
+                    <style>
+                        table td {
+                            position: relative;
+                        }
+                
+                        input::-webkit-outer-spin-button,
+                        input::-webkit-inner-spin-button {
+                        -webkit-appearance: none;
+                        margin: 0;
+                        }
+                
+                        /* Firefox */
+                        input[type=number] {
+                        -moz-appearance: textfield;
+                        }
+                        
+                        table td input {
+                            text-align:center;
+                            display: inline-block;
+                            margin: 0;
+                            margin-left: 0;
+                            margin-right: 0;
+                            left: 0;
+                            right: 0;
+                            height: 100%;
+                            width: 100%;
+                            border: none;
+                            padding: 10px;
+                            box-sizing: border-box;
+                        }
+                        
+                        table td textarea {
+                            resize: none;
+                            display: inline-block;
+                            margin: 0;
+                            height: 100%;
+                            width: 100%;
+                            border: none;
+                            padding: 10px;
+                            box-sizing: border-box;
+                        }
+                    </style>
+                        
+                    <style>
+                        textarea {
+                            overflow: hidden; overflow-wrap: break-word; resize: horizontal;
+                        }
+                    </style>
+                </head>
+            
+                <body>
+                    <script>
+                        window.onscroll = function() {myFunction()};
+
+                        var navbar = document.getElementById("top");
+                        var sticky = navbar.offsetTop;
+
+                        function myFunction() {
+                            if (window.pageYOffset >= sticky) {
+                                navbar.classList.add("sticky")
+                            } else {
+                                navbar.classList.remove("sticky");
+                            }
+                        }
+                    </script>
+                    <form method="post">
+                        <div class="top">
+                            <a href="/index.php" style="float:left;"><i class="fa fa-home"></i>Home</a>
+                            
+                                <button name="save" value="save" class="print" onclick="" title="save"><i class="fas fa-save"></i></button>
+                                <input type="hidden" name="nume" value="Romas" />
+                                <input type="hidden" name="prenume" value="Andrei" />
+                                <input type="hidden" name="cnp" value="" />
+                                <input type="hidden" name="jud" value="Suceava" />
+                                <input type="hidden" name="ani" value="" />
+                                <input type="hidden" name="loc" value="Suceava" />
+                                <input type="hidden" name="id" value="28" />
+                                <input type="hidden" name="diagid" value="11" />
+                            
+                        </div>
+                        <div>
+                            <div class="logo" style="display:inline-block; width:100px; float:left">
+                                <img src="/img/logo.png" width="100px" />
+                            </div>
+
+                            <div class="contact" style="display:inline-block; float:right">
+                                <p><b>Adresa:</b>România, jud. Suceava, </p><p>loc. Suceava, str. Mărășești, nr. 48</p>
+                                <p><b>Telefon:</b><span>0230 523 055</span></p>
+                            </div>
+
+                            <div style="display:inline-block;">
+                                <h3>SC GLAUCOS MEDICAL SRL</h3>
+                            </div>
+                        </div>
+                
+                        <div class="spacerX-10px"></div>
+                        <h1 style="Text-align:center;">Raport Medical</h1>
+                        <div class="spacerX-25px"></div>
+                        <table style="width:100%;border-collapse:collapse;border:none;">
+                            <tbody>
+                                <tr>
+                                    <td style="width:77.4pt;border:double black 1.5pt;border-bottom:solid black 1pt">
+                                        Data consulta&#355;iei
+                                    </td>
+                                    <td colspan="2" style="width:417.8pt;border-top:double black 1.5pt;border-left:none;border-bottom:solid black 1pt;border-right:double black 1.5pt">
+                                        
+                    
+                                        <input name="day" type="number" style="width: 40px;" value="11"/>/
+                                        <input name="luna" type="number" style="width: 40px;" value="05" />/
+                                        <input name="year" type="number" style="width: 50px;" value="2021" />
+                    
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width:77.4pt;border-top:none;border-left:double black 1.5pt;border-bottom:solid black 1pt;border-right:double black 1.5pt">
+                                        Date pacient
+                                        <br/>
+                                        <br/>
+                                    </td>
+                                    <td colspan="2" style="width:417.8pt;border-top:none;border-left:none;border-bottom:solid black 1pt;border-right:double black 1.5pt">
+                                        Romas Andrei, Jude&#355;:Suceava, Localitate:Suceava
+                                        <!--<input type="text" name="Nume" value="" style="width:50%" /><input type="text" name="PreNume" value="" style="width:50%" />-->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width:77.4pt;border-top:none;border-left:double black 1.5pt;border-bottom:solid black 1pt;border-right:double black 1.5pt">
+                                        Motive la prezentare
+                                        <br/>
+                                        <br/>
+                                    </td>
+                                    <td colspan="2" style="width:417.8pt;border-top:none;border-left:none;border-bottom:solid black 1pt;border-right:double black 1.5pt">
+                                        <textarea type="text" name="MLP" value="">ukgckhjhj</textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width:77.4pt;border-top:none;border-left:double black 1.5pt;border-bottom:solid black 1pt;border-right:double black 1.5pt">
+                                        APP
+                                    </td>
+                                    <td colspan="2" style="width:417.8pt;border-top:none;border-left:none;border-bottom:solid black 1pt;border-right:double black 1.5pt;">
+                                        <textarea type="text" name="APP" value="" >dtukj</textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width:77.4pt;border:double black 1.5pt;border-top:none; border-bottom: solid black 1pt;">
+                                        AHC
+                                    </td>
+                                    <td colspan="2" style="width:417.8pt;border-top:none;border-left:none; border-bottom:double black 1.5pt;border-right:double black 1.5pt;">
+                                        <input type="text" name="AHC" value="dytj" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width:77.4pt;border:double black 1.5pt; border-top:none; border-bottom:solid black 1pt;"></td>
+                                    <td width="350" style="width:210.0pt;border-top:none;border-left:none;border-bottom:double black 1.5pt;border-right:double black 1.5pt;">
+                                        <p style="text-align:center;">OD</p>
+                                    </td>
+                                    <td width="346" style="width:207.8pt;border-top:none;border-left:none;border-bottom:double black 1.5pt;border-right:double black 1.5pt;">
+                                        <p style="text-align:center;">OS</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width:77.4pt;border-top:none;border-left:double black 1.5pt;border-bottom:solid black 1pt;border-right:double black 1.5pt;">
+                                        AV
+                                    </td>
+                                    <td style="border-top:none;border-left:none;border-bottom:solid black 1pt;border-right:double black 1.5pt;">
+                                        <input type="text" name="AVD" value="jk" />
+                                    </td>
+                                    <td style="border-top:none;border-left:none;border-bottom:solid black 1pt;border-right:double black 1.5pt;">
+                                        <input type="text" name="AVS" value="hjhk" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width:77.4pt;border-top:none;border-left:double black 1.5pt;border-bottom:solid black 1pt;border-right:double black 1.5pt">
+                                        PIAO
+                                    </td>
+                                    <td style="border-top:none;border-left:none;border-bottom:solid black 1pt;border-right:double black 1.5pt;">
+                                        <input type="text" name="PIAOD" value="hjk" />
+                                    </td>
+                                    <td style="border-top:none;border-left:none;border-bottom:solid black 1pt;border-right:double black 1.5pt;">
+                                        <input type="text" name="PIAOS" value="ghj" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width:77.4pt;border-top:none;border-left:double black 1.5pt;border-bottom:solid black 1pt;border-right:double black 1.5pt">
+                                        Ex. LF
+                                    </td>
+                                    <td style="border-top:none;border-left:none;border-bottom:solid black 1pt;border-right:double black 1.5pt;">
+                                        <textarea  type="text" name="LFD" value="" >gfh</textarea>
+                                    </td>
+                                    <td style="border-top:none;border-left:none;border-bottom:solid black 1pt;border-right:double black 1.5pt;">
+                                        <textarea  type="text" name="LFS" value="" >gh</textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width:77.4pt;border-top:none;border-left:double black 1.5pt;border-bottom:solid black 1pt;border-right:double black 1.5pt">
+                                        Ex. FAO
+                                    </td>
+                                    <td style="border-top:none;border-left:none;border-bottom:solid black 1pt;border-right:double black 1.5pt;">
+                                        <textarea  type="text" name="FAOD" value="" >fgj</textarea>
+                                    </td>
+                                    <td style="border-top:none;border-left:none;border-bottom:solid black 1pt;border-right:double black 1.5pt;">
+                                        <textarea  type="text" name="FAOS" value="" >gh</textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width:77.4pt;border-top:none;border-left:double black 1.5pt;border-bottom:solid black 1pt;border-right:double black 1.5pt">
+                                        Diagnostic
+                                        <br/>
+                                        <br/>
+                                        <br/>
+                                    </td>
+                                    <td colspan="2" style="width:417.8pt;border-top:none;border-left:none;border-bottom:solid black 1pt;border-right:double black 1.5pt;">
+                                        <textarea type="text" name="Diagnostic" value="" required >sdgdh</textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width:77.4pt;border:double black 1.5pt;border-top:none">
+                                        Tratament
+                                        <br/>
+                                        <br/>
+                                        <br/>
+                                    </td>
+                                    <td colspan="2" style="width:417.8pt;border-top:none;border-left:none;border-bottom:double black 1.5pt;border-right:double black 1.5pt">
+                                        <textarea type="text" name="Tratament" value="" required>dhfghpppUHUU</textarea>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="spacerX-25px"></div>
+                        <div style="float:left; width:70%;">
+                            <table class="surplus">
+                                <tr>
+                                    <td rowspan="2"></td>
+                                    <td colspan="3">OD</td>
+                                    <td colspan="3">OS</td>
+                                    <td rowspan="2">D.P.</td>
+                                </tr>
+                                <tr>
+                                    <th>SF</th>
+                                    <th>CYL</th>
+                                    <th>AX</th>
+                                    <th style="border-left: double black 1.5pt;">SF</th>
+                                    <th>CYL</th>
+                                    <th>AX</th>
+                                </tr>
+                                <tr>
+                                    <th style="border: double black 1.5pt; text-align: left;">Distanță</th>
+                                    <td>
+                                        <input name="ODSFdist" type="number " style="width: 100%; " value=" " />
+                                    </td>
+                                    <td>
+                                        <input name="ODCYLdist" type="number " style="width: 100%; " value=" " />
+                                    </td>
+                                    <td>
+                                        <input name="ODAXdist" type="number " style="width: 100%; " value=" " />
+                                    </td>
+                                    <td>
+                                        <input name="OSSFdist" type="number " style="width: 100%; " value=" " />
+                                    </td>
+                                    <td>
+                                        <input name="OSCYLdist" type="number " style="width: 100%; " value=" " />
+                                    </td>
+                                    <td>
+                                        <input name="OSAXdist" type="number " style="width: 100%; " value=" " />
+                                    </td>
+                                    <td>
+                                        <input name="DPdist" type="number " style="width: 100%; height:100%; " value=" " />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th style="border: double black 1.5pt; text-align: left;">Aproape</th>
+                                    <td>
+                                        <input name="ODSFap" type="number " style="width: 100%; " value=" " />
+                                    </td>
+                                    <td>
+                                        <input name="ODCYLap" type="number " style="width: 100%; " value=" " />
+                                    </td>
+                                    <td>
+                                        <input name="ODAXap" type="number " style="width: 100%; " value=" " />
+                                    </td>
+                                    <td>
+                                        <input name="OSSFap" type="number " style="width: 100%; " value=" " />
+                                    </td>
+                                    <td>
+                                        <input name="OSCYLap" type="number " style="width: 100%; " value=" " />
+                                    </td>
+                                    <td>
+                                        <input name="OSAXap" type="number " style="width: 100%; " value=" " />
+                                    </td>
+                                    <td>
+                                        <input name="DPap" type="number " style="width: 100%; height:100%; " value=" " />
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div style="float:right; text-align:center; width:30%;">
+                            <div class="spacerX-10px"></div>
+                            <span style="text-align:center;">Dr.</span><br/>
+                            <span>Martiniuc Georgeta</span>
+                            <br/><br/>
+                            <div class="spacerX-50px"></div>
+                        </div>
+                        <script>
+                            autosize(document.querySelectorAll('textarea'));
+                        </script>
+                                    <script type="text/javascript">
+                                        var x = document.getElementsByClassName("surplus");
+                                        x[0].style.display = "none";
+                                    </script>
+
+                                
+                                
+                            <script type="text/javascript">
+                                $(document).ready(function () {
+                                    window.print();
+                                    setTimeout("closePrintView()", 1000);
+                                });
+                                function closePrintView() {
+                                    document.location.href = '../';
+                                }
+                            </script>            
+                        
+                    </form>
+                </body>
+            
+            </html>
+            

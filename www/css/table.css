@@ -1,0 +1,88 @@
+<style>
+/*
+     SEARCH CONTAINER
+*/
+
+body {
+    position: relative;
+}
+
+.results table {
+    border-collapse: collapse;
+}
+
+.results tr,
+th,
+td {
+    border: 1px solid black;
+}
+
+.results table {
+    width: 100%;
+}
+
+.results table #diagnostic {
+    width: 100%;
+}
+
+table td {
+    position: relative;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* Firefox */
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+table td input {
+    text-align: center;
+    display: inline-block;
+    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    border: none;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+table td textarea {
+    resize: none;
+    display: inline-block;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.surplus {
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+}
+
+.surplus tr td {
+    text-align: center;
+    width: 77.4pt;
+    border: double black 1.5pt;
+    border-bottom: solid black 1pt;
+    width: 417.8pt;
+    border-top: double black 1.5pt;
+    border-bottom: solid black 1.5pt;
+    border-right: double black 1.5pt
+}
+
+</style>
